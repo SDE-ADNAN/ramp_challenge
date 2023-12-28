@@ -1,57 +1,70 @@
-# Ramp Challenge
+# Getting Started with Create React App
 
-Thanks for applying to Ramp. Solve this CTF[1] challenge and add the result to your application.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-We recommend opening this file with a Markdown viewer. (https://www.google.com/search?q=markdown+viewer)
+## Available Scripts
 
-## Instructions
+In the project directory, you can run:
 
-1. Open this [link](https://tns4lpgmziiypnxxzel5ss5nyu0nftol.lambda-url.us-east-1.on.aws/challenge)
-2. Find a hidden URL within the HTML
-   - Each character of the URL is given by this DOM tree, in this specific order. You need to find (in order) all of the occurrences and join them to get the link.
-   - The asterisk **(\*)** is a wildcard representing zero or more characters that can be present in the string. These characters are irrelevant to the result and should be ignored.
-   - There can be zero or more DOM nodes between each valid tag. These nodes are irrelevant to the result.
-   - Any additional attribute that doesn't interfere with the described pattern can be safely ignored.
+### `npm start`
 
-Pattern of the DOM tree for each valid character of the URL
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-```html
-<code data-class="23*">
-  <div data-tag="*93">
-    <span data-id="*21*">
-      <i class="char" value="VALID_CHARACTER"></i>
-    </span>
-  </div>
-</code>
-```
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-(_To validate this step, you should be able to open the URL and get an English word. This means you have captured the flag!_ 🥳)
+### `npm test`
 
-3. Create a CodeSandbox React application
-4. Make an HTTP request to URL obtained in step 2 to load the flag into a React component
-   - Don't use any external libraries. Use browser APIs
-   - Render a "Loading..." text while the request is ongoing
-5. Render the flag you loaded in step 4 with the following conditions:
-   - Simulate a typewriter effect with a half second delay between each character. _Start showing nothing and then display characters one by one until the full string is displayed._
-   - No style required
-   - Render the flag a list, where each character is a list item
-   - Animation should trigger after you load the flag
-   - Animation should run only once
-   - Use React APIs only. Don't use CSS or external libraries
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Bonus: Add as a comment the script you used to to get the URL in step 2
+### `npm run build`
 
-## Submission
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Paste the flag you captured in step 2 and the link to your CodeSandbox in the job application with the following format:
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-`<FLAG> - <LINK>`
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-We're aware answers here might eventually be leaked and we'll probably have to refresh this every couple months or so, but please keep in mind it'll be very easy to tell once that happens and will only result in slowing down our ability to process applications - so please keep the result to yourself.
+### `npm run eject`
 
-\[1\]: https://en.wikipedia.org/wiki/Capture_the_flag_(cybersecurity)
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-https://wgg522pwivhvi5gqsn675gth3q0otdja.lambda-url.us-east-1.on.aws/6f7665
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
